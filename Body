@@ -1,0 +1,32 @@
+{
+    "sections": [
+        {
+            "displayname": "Information",
+            "fields": [
+                "Document Name",
+                "Reason",
+                "Department"
+            ]
+        },
+        {
+            "displayname": "Approval Details",
+            "fields": [
+                "Status",
+                "Amount"
+            ]
+        },
+        {
+            "displayname": "Approval Response",
+            "fields": [
+                "ApprovalHistory",
+                "Approval History"
+            ]
+        },
+        {
+            "displayname": "Attachments",
+            "fields": [
+                "Attachments"
+            ]
+        }
+    ]
+}
