@@ -1,0 +1,23 @@
+ {
+    "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+    "elmType": "div",
+    "attributes": {
+      "class": "=if(@currentField == '1. Draft or Error', 'ms-bgColor-gray90',if(@currentField == '2. No Approval Required', 'ms-bgColor-blueLight',if(@currentField == '3. Awaiting Approval 1', 'ms-bgColor-purpleLight', if(@currentField == '4. Awaiting Approval 2', 'ms-bgColor-purpleLight', if(@currentField == '5. Change in Progress', 'ms-bgColor-tealLight', if(@currentField == '6. Complete', 'ms-bgColor-sharedYellowGreen10', 'ms-bgColor-blueLight')))))) + ' ms-fontColor-black'"
+    },
+    "children": [
+      {
+        "elmType": "span",
+        "style": {
+          "display": "inline-block",
+          "padding": "0 4px"
+        },
+        "attributes": {
+          "iconName": "=if(@currentField == '6. Complete', 'CheckMark', if(@currentField == '2. No Approval Required', 'CheckMark', if(@currentField == '3. Awaiting Approval 1', 'Forward', if(@currentField == '4. Awaiting Approval 2', 'Forward',if(@currentField == '5. Change in Progress', 'Forward',if(@currentField == '1. Draft or Error', 'Error', 'ErrorBadge'))))))"
+        }
+      },
+      {
+        "elmType": "span",
+        "txtContent": "@currentField"
+      }
+    ]
+  }
