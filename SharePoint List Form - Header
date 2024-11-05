@@ -2,7 +2,7 @@
     "debugmode": "true",
     "elmType": "div",
     "attributes": {
-        "class": "=if([$Status] == '6. Complete', 'ms-bgColor-sharedYellowGreen10', if([$Status] == '1. Draft or Error', 'ms-bgColor-gray90', if([$Status] == '2. No Approval Required', 'ms-bgColor-blueLight', if([$Status] == '3. Awaiting Approval 1', 'ms-bgColor-purpleLight',if([$Status] == '4. Awaiting Approval 2', 'ms-bgColor-purpleLight',if([$Status] == '5. Change in Progress', 'ms-bgColor-tealLight',  'ms-bgColor-blueLight'))))"
+        "class": "=if([$Status] == '6. Complete', 'ms-bgColor-sharedYellowGreen10', if([$Status] == '1. Draft or Error', 'ms-bgColor-gray90', if([$Status] == '2. No Approval Required', 'ms-bgColor-blueLight', if([$Status] == '3. Awaiting Approval', 'ms-bgColor-purpleLight',if([$Status] == '6. Rejected/Cancelled', 'ms-bgColor-red',if([$Status] == '4. Change in Progress', 'ms-bgColor-tealLight',if([$Status] == '5. Complete', 'ms-bgColor-sharedYellowGreen10',  'ms-bgColor-blueLight')))))"
     },
     "style": {
         "width": "99%",
