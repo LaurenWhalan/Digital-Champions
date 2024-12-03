@@ -1,27 +1,14 @@
-<style>
-table {
-  border: 1px solid black;
-  background-color: #EEEEEE;
-  width: 100%;
-  text-align: centre;
-  border-collapse: collapse;
-}
-table th {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-table td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-</style>
-
-<table><tr>
+<table>
+<table border="1">
+<tr>
 <th><b>Date & Time</b></th>
 <th><b>Username</b></th>
-<th><b>Action</b></th><th>
-<b>Comments</b></th></tr>
-<tr><td>@{body('Convert_time_zone')}</td>
+<th><b>Action</b></th>
+<th><b>Comments</b></th></tr>
+
+<tr>
+<td>@{body('Convert_time_zone')}</td>
 <td>@{triggerOutputs()?['body/Author/DisplayName']}</td>
-<td>Started Approval Flow</td>
-<td></td></tr></table>
+<td>Requested</td>
+<td>Not Applicable</td>
+</tr>
